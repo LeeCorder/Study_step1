@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout07</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        #wrap {
+            font-size: 2rem;
+            color: #fff;
+            text-align: center;
+        }
+        #header {
+        }
+        #banner {
+            height: 450px;
+            background: #4dd0e1
+        }
+        #contents {
+        }
+        #footer {
+        }
+
+        .header-top {
+            height: 70px;
+            background: #b2ebf2;
+        }
+        .header-nav {
+            height: 70px;
+            background: #80deea;
+        }
+        .contents1 {
+            height: 90px;
+            background-color: #26c6da;
+        }
+        .contents2 {
+            height: 480px;
+            background-color: #00bcd4
+        }
+        .contents3 {
+            height: 380px;
+            background-color: #00acc1;
+        }
+        .footer-nav {
+            height: 60px;
+            background-color: #0097a7;
+        }
+        .footer-info {
+            height: 160px;
+            background-color: #00838f;
+        }
+
+        /* 가운데 영역 */
+        .container {
+            width: 1100px;
+            margin: 0 auto;
+            height: inherit;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="header-top">
+                <div class="container">header-top</div>
+            </div>
+            <!-- //header-top -->
+            <div class="header-nav">
+                <div class="container">header-nav</div>
+            </div>
+            <!-- //header-nav -->
+        </div>
+        <!-- //header -->
+        <div id="banner">
+            <div class="container">banner</div>
+        </div>
+        <!-- //banner -->
+        <div id="contents">
+            <div class="contents1">
+                <div class="container">contents1</div>
+            </div>
+            <!-- //contents1 -->
+            <div class="contents2">
+                <div class="container">contents2</div>
+            </div>
+            <!-- //contents2 -->
+            <div class="contents3">
+                <div class="container">contents3</div>
+            </div>
+            <!-- //contents3 -->
+        </div>
+        <!-- //contents -->
+        <div id="footer">
+            <div class="footer-nav">
+                <div class="container">footer-nav</div>
+            </div>
+            <!-- //footer-nav -->
+            <div class="footer-info">
+                <div class="container">footer-info</div>
+            </div>
+            <!-- //footer-info -->
+        </div>
+        <!-- //footer -->
+    </div>
+    <!-- //wrap -->
+</body>
+</html>
