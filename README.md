@@ -12,7 +12,7 @@ STEP 1. 웹 표준 사이트 따라만들기
       - 의미없는 이미지 사용(단순 꾸미기)
       - 대체텍스트 미제공
      
-   * CSS bacgrond속성 이용하되 의미 있는 이미지 사용
+   * CSS bacgrond속성 이용하되 의미 있는 이미지 사용 (최근 많이 사용!)
       - 웹 표준 준수를 위해 ImageSprite기법, IR(imageReplacement) 이용
       - 이미지스프라이트 사용 시 유지보수 쉬우며, image 용량 많이 줄여짐
 ### 1-1. IR Method
