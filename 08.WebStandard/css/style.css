@@ -80,5 +80,27 @@
     color: #666;
 }
 
-.header .header__title {}
+.header .header__title {
+    text-align: center;
+}
+.header .header__title h1 {
+    display: inline-block;
+    background-color: #4aa8d4;
+    font-size: 28px;
+    padding: 5px 20px 6px 20px;
+    color: #fff;
+    margin-top: 40px;
+    font-weight: normal;
+/*     text-transform: uppercase; */
+}
+
+.header .header__title a {
+    display: inline-block;
+    background-color: #2698cb;
+    font-size: 18px;
+    color: #fff;
+    padding: 5px 20px 6px 20px;
+    margin-top: -5px;
+}
+
 .header .header__icon {}
