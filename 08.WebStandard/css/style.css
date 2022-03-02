@@ -103,4 +103,41 @@
     margin-top: -5px;
 }
 
-.header .header__icon {}
+.header .header__icon {
+    text-align: center;
+    margin-top: 30px;
+}
+.header .header__icon a {
+    width: 60px;
+    height: 60px;
+    background: url(../img/icon.png);
+    display: inline-block;
+    margin: 0 3px;
+}
+/* ImageSprite icon */
+.header .header__icon a.icon1 {
+    background-position: 0 0;
+}
+.header .header__icon a.icon2 {
+    background-position: 0 -60px;
+}
+.header .header__icon a.icon3 {
+    background-position: 0 -120px;
+}
+.header .header__icon a.icon4 {
+    background-position: 0 -180px;
+}
+
+/* MouseOver Effect */
+.header .header__icon a.icon1:hover {
+    background-position: -60px 0;
+}
+.header .header__icon a.icon2:hover {
+    background-position: -60px -60px;
+}
+.header .header__icon a.icon3:hover {
+    background-position: -60px -120px;
+}
+.header .header__icon a.icon4:hover {
+    background-position: -60px -180px;
+}
