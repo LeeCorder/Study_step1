@@ -16,6 +16,13 @@ dl,ul,li,ol,menu {
     list-style: none;
 }
 
+/* 제목태그 초기화(취향임) */
+h1,h2,h3,h4,h5,h6 {
+    font-size: 13px;
+    color: #222;
+    font-weight: normal;
+}
+
 /* a link */
 a {color: #222; text-decoration: none;}
 a:hover {color: #390;}
