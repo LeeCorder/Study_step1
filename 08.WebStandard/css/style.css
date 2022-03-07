@@ -56,14 +56,14 @@
     background-color: #eaf7fd;
 }
 #contents__banner {
-    width: 100%;
-    height: 200px;
-    background-color: #555;
+/*     width: 100%;
+    height: 200px; */
+    background-color: #dceff7;
 }
 #contents__main {
-    width: 100%;
-    height: 200px;
-    background-color: #666;
+/*     width: 100%;
+    height: 200px; */
+    background-color: #f6fdff;
 }
 
 /* 헤더 */
@@ -208,4 +208,278 @@
     width: 60px;
     height: 60px;
     background: url(../img/icon.png) no-repeat 0 -600px;
+}
+
+/* 배너영역 */
+
+.banner {
+    position: relative;
+    padding: 24px 0 20px;
+}
+
+.banner a.prev {
+    position: absolute;
+    left: -80px;
+    top: 60px;
+    width: 43px;
+    height: 43px;
+    background: url(../img/icon.png) no-repeat -150px 0;
+}
+.banner a.next {
+    position: absolute;
+    right: -80px;
+    top: 60px;
+    width: 43px;
+    height: 43px;
+    background: url(../img/icon.png) no-repeat -150px -43px;
+}
+.banner a.prev:hover {background-position: -193px 0; }
+.banner a.next:hover {background-position: -193px -43px; }
+
+.banner ul {
+    overflow: hidden;
+}
+.banner ul li {
+    float: left;
+    width: 330px;
+}
+/* img는 인라인구조 */
+.banner ul li img {
+    border: 4px solid #dcdcdc;
+}
+.banner ul li img:hover {
+    border-color: #98bcbc;
+}
+/* .banner ul li:last-child {
+    text-align: right;
+}
+.banner ul li:nth-child(2) {
+    text-align: center;
+} 
+Cross Browsing 방법은 아래처럼*/
+
+/* text-align 속성은 inline구조에서 사용가능
+    block에서는 안먹힘 */
+.banner ul li.banner__img1 {
+    text-align: left;
+}
+.banner ul li.banner__img2 {
+    text-align: center;
+}
+.banner ul li.banner__img3 {
+    text-align: right;
+}
+
+/* 컨텐츠 영역 */
+/* column class 공통요소 */
+.contents__column {
+    overflow: hidden;
+    padding-top: 30px;
+}
+.contents__column .column {
+    width: 289px;
+    height: 363px;
+    float: left;
+    margin: 0 30px 30px 0;
+    padding-right: 30px;
+    position: relative;
+}
+/* column class 개별요소 */
+.contents__column .col1 {
+    border-right: 1px solid #c8c8c8;
+}
+.contents__column .col2 {
+    border-right: 1px solid #c8c8c8;
+}
+.contents__column .col3 {
+    margin-right: 0;
+    padding-right: 0;
+
+}
+.contents__column .col4 {
+    border-right: 1px solid #c8c8c8;
+}
+.contents__column .col5 {
+    border-right: 1px solid #c8c8c8;
+}
+.contents__column .col6 {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.contents__column .column .icon_img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url(../img/icon.png) no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.contents__column .column .icon_title {
+    padding-left: 70px;
+    font-size: 16px;
+    color: #2c94c4;
+}
+.contents__column .column .icon_description {
+    padding-left: 70px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d0d0d0;
+    margin-bottom: 15px;
+}
+
+.contents__column .col1 .icon_img {
+    background-position: 0px -240px;
+}
+.contents__column .col1 .icon_img:hover {
+    background-position: -60px -240px;
+}
+
+.contents__column .col2 .icon_img {
+    background-position: 0px -300px;
+}
+.contents__column .col2 .icon_img:hover {
+    background-position: -60px -300px;
+}
+
+.contents__column .col3 .icon_img {
+    background-position: 0px -360px;
+}
+.contents__column .col3 .icon_img:hover {
+    background-position: -60px -360px;
+}
+
+.contents__column .col4 .icon_img {
+    background-position: 0px -420px;
+}
+.contents__column .col4 .icon_img:hover {
+    background-position: -60px -420px;
+}
+
+.contents__column .col5 .icon_img {
+    background-position: 0px -480px;
+}
+.contents__column .col5 .icon_img:hover {
+    background-position: -60px -480px;
+}
+
+.contents__column .col6 .icon_img {
+    background-position: 0px -540px;
+}
+.contents__column .col6 .icon_img:hover {
+    background-position: -60px -540px;
+}
+
+/* 게시판 영역 */
+.notice {
+    position: relative;
+}
+.notice h4 {
+    font-size: 14px;
+    color: #0093bd;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+.notice ul li {
+    /* 한줄효과 넣기 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: url(../img/dot.gif) no-repeat 0 8px;
+    padding-left: 8px;
+}
+.notice ul li a {
+    font-size: 12px;
+}
+.notice a.more {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background: url(../img/icon.png) no-repeat -150px -90px;
+    width: 17px;
+    height: 17px;
+}
+
+/* 게시판2 영역(날짜가 있는 게시판) */
+.notice2 {
+    position: relative;
+    margin-top: 15px;
+}
+.notice2 h4 {
+    font-size: 14px;
+    color: #0093bd;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+.notice2 li {
+    overflow: hidden;
+    background: url(../img/dot.gif) no-repeat 0 8px;
+    padding-left: 8px;
+}
+.notice2 li a {
+    float: left;
+    width: 65%;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.notice2 li span {
+    float: right;
+    width: 30%;
+    text-align: right;
+}
+.notice2 a.more {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background: url(../img/icon.png) no-repeat -150px -90px;
+    width: 17px;
+    height: 17px;
+}
+
+/* 게시판3 이미지활용 게시판 */
+.notice3 {
+    position: relative;
+}
+.notice3 h4 {
+    font-size: 14px;
+    color: #0093bd;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+.notice3 li {
+    position: relative;
+    padding: 8px 0 14px 60px;
+}
+.notice3 li a img {
+    width: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 1px solid #0093bd;
+}
+.notice3 li a strong {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.notice3 li a span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px;
+}
+.notice3 a.more {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background: url(../img/icon.png) no-repeat -150px -90px;
+    width: 17px;
+    height: 17px;
 }
