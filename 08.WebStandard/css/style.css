@@ -644,3 +644,47 @@ Cross Browsing 방법은 아래처럼*/
 .tabMenu__list .active li a {
     color: #333;
 }
+
+/* recentNotice */
+
+.recentNotice {
+    position: relative;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+.recentNotice h4 {
+    font-size: 14px;
+    color: #0093bd;
+    padding: 8px 10px;
+    font-weight: 700;
+    border-bottom: 1px solid #ccc;
+}
+.recentNotice h4 em {
+    color: #cf3292;
+}
+.recentNotice ul {
+    padding: 10px;
+}
+.recentNotice ul li {
+    overflow: hidden;
+    background: url(../img/dot.gif) no-repeat 0 8px;
+    padding-left: 8px;
+    padding-bottom: 2px;
+}
+.recentNotice ul li a {
+    float: left;
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.recentNotice ul li span {
+    float: right;
+    width: 30%;
+    text-align: right;
+}
+.recentNotice a.more {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+}
