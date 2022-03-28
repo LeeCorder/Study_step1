@@ -688,3 +688,69 @@ Cross Browsing 방법은 아래처럼*/
     top: 9px;
     right: 9px;
 }
+
+/* 갤러리 */
+.gallery {
+    border: 1px solid #ccc;
+    height: 254px;
+    position: relative;
+    overflow: hidden;
+
+}
+.gallery__header {
+    font-size: 14px;
+    color: #0093bd;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0 8px 11px;
+    font-weight: bold;
+}
+.gallery__btn {
+    position: absolute;
+    top: 7px;
+    right: 5px;
+}
+.gallery__btn--list {
+    overflow: hidden;
+}
+.gallery__btn--sort {
+    float: left;
+    margin: 1px 2px;
+}
+.gallery__btn--link {
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(../img/icon.png) no-repeat;
+}
+.gallery__btn--play {
+    background-position: -150px -120px;
+}
+.gallery__btn--play:hover {
+    background-position: -173px -120px;
+}
+.gallery__btn--stop {
+    background-position: -150px -143px;
+}
+.gallery__btn--stop:hover {
+    background-position: -173px -143px;
+}
+.gallery__btn--prev {
+    background-position: -150px -166px;
+}
+.gallery__btn--prev:hover {
+    background-position: -173px -166px;
+}
+.gallery__btn--next {
+    background-position: -150px -189px;
+}
+.gallery__btn--next:hover {
+    background-position: -173px -189px;
+}
+
+.gallery__img {}
+.gallery__img ul {}
+.gallery__img  ul li {}
+.gallery__img  ul li a {}
+.gallery__img  ul li a img {
+    width: 100%;
+}
