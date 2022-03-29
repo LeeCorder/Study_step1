@@ -746,11 +746,88 @@ Cross Browsing 방법은 아래처럼*/
 .gallery__btn--next:hover {
     background-position: -173px -189px;
 }
-
-.gallery__img {}
-.gallery__img ul {}
-.gallery__img  ul li {}
-.gallery__img  ul li a {}
 .gallery__img  ul li a img {
+    width: 100%;
+}
+
+/* 로그인 영역 */
+#login{
+    background: #f2f4f5;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.login__header {
+    overflow: hidden;
+    font-size: 12px;
+    height: 30px;
+}
+.loginHeader__check {
+    float: left;
+    padding-right: 15px;
+    }
+.input-check {
+    vertical-align: -2px;
+}
+
+.loginHeader__ip {
+    float: left;
+}
+.loginHeader__ip em {
+    color: #0093bd;
+    text-decoration: underline;
+}
+
+.login__content {
+    position: relative;
+}
+.loginContent__text {}
+.loginContent__text .input-text {
+    width: 182px;
+    height: 16px;
+    padding: 2px 5px;
+    border: 1px solid #bebebe;
+    margin-bottom: 3px;
+    background: #fff;
+}
+.loginContent__btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 62px;
+    height: 47px;
+    background: #fff;
+    border: 1px solid #bebebe;
+}
+.login__footer {
+    margin-top: 5px;
+}
+.login__footer li {
+    display: inline;
+}
+.login__footer li a {
+    font-size: 12px;
+}
+
+/* 팝업배너 */
+.popup__header {
+    font-size: 14px;
+    color: #0093bd;
+    padding-bottom: 4px;
+    font-weight: 700;
+
+}
+.popup__banner {
+    overflow: hidden;
+}
+.popup__banner li {
+    float: left;
+    width: 93px;
+    margin-right: 5px;
+}
+.popup__banner li.last {
+    margin-right: 0;
+}
+.popup__banner li img {
     width: 100%;
 }
