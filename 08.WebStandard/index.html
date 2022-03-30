@@ -444,9 +444,59 @@
         <!-- //contents -->
 
         <footer id="footer">
-            <div class="container">footer</div>
+            <div class="container">
+                <h2 class="ir_screenOut">푸터 영역</h2>
+                <div class="footer">
+                    <ul class="footer__contents">
+                        <li><a href="#">사이트 도움말</a></li>
+                        <li><a href="#">사이트 이용약관</a></li>
+                        <li><a href="#">사이트 운영규칙</a></li>
+                        <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+                        <li><a href="#">책임의 한계와 법적고지</a></li>
+                        <li><a href="#">게시중단요청 서비스</a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                    <address class="footer__copy">
+                        copyright&copy;leecorder.co.kr All Right Reserved
+                    </address>
+                </div>
+            </div>
         </footer>
     </div>
     <!-- //wrap -->
+
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(".title .btn").click(function(e){
+            e.preventDefault();
+            $("#contents__nav").slideToggle(500);
+            /*
+            jquery 없이 vanilla js로 만들어보기!
+            $("#contents__nav").css("display","block");
+            이건 단순 css컨트롤
+            */
+            /*
+            $("#contents__nav").show();
+            $("#contents__nav").fadein();
+            $("#contents__nav").slidedown();
+            이 세개는 나타낼때 한 번 뿐이 못 씀
+            */
+            /*
+            $("#contents__nav").toggle();
+            위의 show와 hide 합쳐진 메서드
+            $("#contents__nav").fadetoggle();
+            fadein fadeout 합쳐진 메서드
+            $("#contents__nav").slidetoggle(인자에 시간 넣을수 있음);
+            slidedown slideup 합쳐진 메서드
+            위는 전부 jquery의 method
+            */
+            /*
+            $(".title .btn").addClass("on");
+            addClass 와 removeClass 합쳐진 메서드가 아래 toggle
+            */
+            $(this).toggleClass("on");
+        });
+    </script>
 </body>
 </html>

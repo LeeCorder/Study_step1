@@ -32,8 +32,7 @@
 } */
 #footer {
 /*     width: 100%; */
-    height: 200px;
-    background-color: #555;
+    border-top: 1px solid #eee;
 }
 
 /* 컨테이너 */
@@ -49,6 +48,7 @@
 /*     width: 100%;
     height: 200px; */
     background-color: #f6fdff;
+    display: none;
 }
 #contents__title {
 /*     width: 100%;
@@ -208,6 +208,10 @@
     width: 60px;
     height: 60px;
     background: url(../img/icon.png) no-repeat 0 -600px;
+}
+
+.title .btn.on {
+    background-position: 0 -660px;
 }
 
 /* 배너영역 */
@@ -831,3 +835,34 @@ Cross Browsing 방법은 아래처럼*/
 .popup__banner li img {
     width: 100%;
 }
+
+/* 푸터영역 */
+.footer {
+    padding: 25px 0;
+    text-align: center;
+
+}
+.footer__contents {
+    margin-bottom: 20px;
+}
+.footer__contents li {
+    display: inline;
+    padding: 0px 7px 0px 10px;
+    position: relative;
+}
+.footer__contents li:before {
+    content: "";
+    width: 1px;
+    height: 12px;
+    background: #ccc;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.footer__contents li:first-child:before {
+    width: 0;
+    height: 0;
+}
+.footer__contents li a {}
+.footer__contents li a strong {}
+.footer__copy {}
