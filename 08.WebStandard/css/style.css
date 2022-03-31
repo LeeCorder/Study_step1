@@ -50,6 +50,7 @@
     background-color: #f6fdff;
     display: none;
 }
+
 #contents__title {
 /*     width: 100%;
     height: 200px; */
@@ -207,12 +208,20 @@
     right: 0;
     width: 60px;
     height: 60px;
-    background: url(../img/icon.png) no-repeat 0 -600px;
+    background: url(../img/icon.png) no-repeat;
+    background-position: 0 -600px;
+    z-index: 1;
 }
 
+/* helper class for jquery
 .title .btn.on {
     background-position: 0 -660px;
-}
+} */
+/* helper class for vanilla javascript */
+/* .on {
+    background-position: 0px -660px;
+    display: block;
+} */
 
 /* 배너영역 */
 

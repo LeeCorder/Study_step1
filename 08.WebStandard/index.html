@@ -466,7 +466,7 @@
     <!-- //wrap -->
 
     <!-- jquery cdn -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript">
         $(".title .btn").click(function(e){
             e.preventDefault();
@@ -497,6 +497,45 @@
             */
             $(this).toggleClass("on");
         });
+    </script> -->
+    <!-- vanilla js로 위 기능 구현하기 -->
+    <script type="text/javascript">
+        const toggleBtn = document.querySelector(".btn");
+        const toggleTarget = document.getElementById("contents__nav");
+        /* control css attribute of id & class */
+        function handleMenuToggle(){
+            let currentBackground = toggleBtn.style.backgroundPosition;
+            let newBackground;
+            if(currentBackground === '0px -600px') {
+                newBackground = '0px -660px';
+            } else {
+                newBackground = '0px -600px';
+            };
+            let currentDisplay = toggleTarget.style.display;
+            let newDisplay;
+            if(currentDisplay === 'none') {
+                newDisplay = 'block';
+            } else {
+                newDisplay = 'none';
+            };
+            toggleBtn.style.backgroundPosition = newBackground;
+            toggleTarget.style.display = newDisplay;
+        };
+        toggleBtn.addEventListener('click',handleMenuToggle);
+        /* use toggle method */
+/*         toggleBtn.addEventListener('click', function(){
+            
+            toggleTarget.classList.toggle('on');
+            toggleBtn.classList.toggle('on');
+        }); */
+
+    /* 기능 순서도
+        1. btn을 누른다
+        2. #contents__nav의 display:none 이 display:block이 된다
+        3. .btn의 배경속성이 background-position: 0 -660px;이 된다
+        4. 다시 btn을 클릭하면 이전으로 돌아온다
+        5. 메뉴가 나타나고 사라질 때 transition으로 부드럽게처리
+          */
     </script>
 </body>
 </html>
