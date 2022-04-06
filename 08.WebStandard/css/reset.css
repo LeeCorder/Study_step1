@@ -31,6 +31,9 @@ h1,h2,h3,h4,h5,h6 {
 /*  테두리 초기화 */
 img, fieldset {border: 0 none;}
 
+/* 버튼 초기화 */
+button {border: 0;}
+
 /* a link */
 a {color: #222; text-decoration: none;}
 a:hover {color: #390;}

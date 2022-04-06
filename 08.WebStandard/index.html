@@ -13,6 +13,7 @@
     <!-- CSS Style -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/slick.css">
 
     <!-- WEB Fonts 1 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,7 +76,7 @@
         <!-- //header -->
 
         <main id="contents">
-            <div id="contents__nav">
+            <div id="contents__nav" class="default">
                 <div class="container">
                     <h2 class="ir_screenOut">전체 메뉴</h2>
                     <div class="nav">
@@ -145,13 +146,22 @@
             <div id="contents__banner">
                 <div class="container">
                     <div class="banner">
-                    <a href="#" class="prev"><span class="ir_screenOut">이전 이미지</span></a>
+                    <!-- <a href="#" class="prev"><span class="ir_screenOut">이전 이미지</span></a>
                     <ul>
                         <li class="banner__img1"><a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a></li>
                         <li class="banner__img2"><a href="#"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a></li>
                         <li class="banner__img3"><a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a></li>
                     </ul>
-                    <a href="#" class="next"><span class="ir_screenOut">다음 이미지</span></a>
+                    <a href="#" class="next"><span class="ir_screenOut">다음 이미지</span></a> -->
+                        <div><a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a></div>
+                        <div><a href="#"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a></div>
+                        <div><a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a></div>
+                        <div><a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a></div>
+                        <div><a href="#"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a></div>
+                        <div><a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a></div>
+                        <div><a href="#"><img src="img/banner_link1.jpg" alt="웹 표준 지침서 보기"></a></div>
+                        <div><a href="#"><img src="img/banner_link2.jpg" alt="CSS 버튼 만들기"></a></div>
+                        <div><a href="#"><img src="img/banner_link3.jpg" alt="로그인 폼 만들기"></a></div>
                     </div>
                 </div>
             </div>
@@ -303,7 +313,7 @@
                                 <h4 class="ir_screenOut">탭메뉴 제목</h4>
                                 <ul class="tabMenu__list">
                                     <li class="active">
-                                        <a href="#">공지사항1</a>
+                                        <a href="#" class="tabMenu__btn">공지사항1</a>
                                         <ul class="tabMenu__notice">
                                             <li><a href="#">첫 번째 공지사항 탭 메뉴 테스트 목록입니다. 첫 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
                                             <li><a href="#">첫 번째 공지사항 탭 메뉴 테스트 목록입니다. 첫 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
@@ -311,16 +321,16 @@
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">공지사항2</a>
-                                        <ul class="tabMenu__notice" style="display: none;">
+                                        <a href="#" class="tabMenu__btn">공지사항2</a>
+                                        <ul class="tabMenu__notice">
                                             <li><a href="#">두 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
                                             <li><a href="#">두 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
                                             <li><a href="#">두 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="#">공지사항3</a>
-                                        <ul class="tabMenu__notice" style="display: none;">
+                                        <a href="#" class="tabMenu__btn">공지사항3</a>
+                                        <ul class="tabMenu__notice">
                                             <li><a href="#">세 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
                                             <li><a href="#">세 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
                                             <li><a href="#">세 번째 공지사항 탭 메뉴 테스트 목록입니다.</a></li>
@@ -369,13 +379,14 @@
                                     </ul>
                                 </div>
                                 <div class="gallery__img">
-                                    <ul>
-                                        <li><a href="#"><img src="./img/gallery01.jpg" alt="이미지1"></a></li>
-                                        <li><a href="#"><img src="./img/gallery02.jpg" alt="이미지2"></a></li>
-                                        <li><a href="#"><img src="./img/gallery03.jpg" alt="이미지3"></a></li>
-                                        <li><a href="#"><img src="./img/gallery04.jpg" alt="이미지4"></a></li>
-                                        <li><a href="#"><img src="./img/gallery05.jpg" alt="이미지5"></a></li>
-                                    </ul>
+                                    <!-- 자연스러운 연결위해 앞뒤로 붙임 -->
+                                    <div><a href="#"><img src="./img/gallery05.jpg" alt="이미지5"></a></div>
+                                    <div><a href="#"><img src="./img/gallery01.jpg" alt="이미지1"></a></div>
+                                    <div><a href="#"><img src="./img/gallery02.jpg" alt="이미지2"></a></div>
+                                    <div><a href="#"><img src="./img/gallery03.jpg" alt="이미지3"></a></div>
+                                    <div><a href="#"><img src="./img/gallery04.jpg" alt="이미지4"></a></div>
+                                    <div><a href="#"><img src="./img/gallery05.jpg" alt="이미지5"></a></div>
+                                    <div><a href="#"><img src="./img/gallery01.jpg" alt="이미지1"></a></div>
                                 </div>
                             </div>
                             <!-- //갤러리 -->
@@ -407,9 +418,9 @@
                                             <h5 class="ir_screenOut">로그인 영역</h5>
                                             <div class="loginContent__text">
                                                 <label for="uid" class="ir_screenOut">아이디</label>
-                                                <input type="text" id="uid" name="uid" class="input-text" maxlength="20">
+                                                <input type="text" id="uid" name="uid" class="input-text" placeholder="아이디" maxlength="20">
                                                 <label for="upw" class="ir_screenOut">비밀번호</label>
-                                                <input type="password" id="upw" name="upw" class="input-text" maxlength="20">
+                                                <input type="password" id="upw" name="upw" class="input-text" placeholder="비밀번호" maxlength="20">
                                             </div>
                                             <button class="loginContent__btn" type="submit">로그인</button>
                                         </div>
@@ -466,8 +477,8 @@
     <!-- //wrap -->
 
     <!-- jquery cdn -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script type="text/javascript">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <!--  <script type="text/javascript">
         $(".title .btn").click(function(e){
             e.preventDefault();
             $("#contents__nav").slideToggle(500);
@@ -499,35 +510,53 @@
         });
     </script> -->
     <!-- vanilla js로 위 기능 구현하기 -->
+    <!-- slide library 'slick' -->
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <!-- jquery -->
+    <script type="text/javascript">
+        /* 배너 */
+            $('.banner').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true
+            });
+    </script>
     <script type="text/javascript">
         const toggleBtn = document.querySelector(".btn");
         const toggleTarget = document.getElementById("contents__nav");
         /* control css attribute of id & class */
-        function handleMenuToggle(){
+        /* style속성은 인라인으로 바로 적용되서 !important 제외 최고우선순위. 권장되지 않음. 아래 classlist 메서드 이용 권장 */
+        /* 인라인에 display:none 과 background-position:0 -660px가 있어야 두번 클릭해야하는거 없어짐 */
+
+/*         function handleMenuToggle(){
             let currentBackground = toggleBtn.style.backgroundPosition;
             let newBackground;
-            if(currentBackground === '0px -600px') {
-                newBackground = '0px -660px';
-            } else {
+            if(currentBackground !== '0px -600px') {
                 newBackground = '0px -600px';
-            };
-            let currentDisplay = toggleTarget.style.display;
-            let newDisplay;
-            if(currentDisplay === 'none') {
-                newDisplay = 'block';
             } else {
-                newDisplay = 'none';
+                newBackground = '0px -660px';
             };
             toggleBtn.style.backgroundPosition = newBackground;
+
+            let currentDisplay = toggleTarget.style.display;
+            let newDisplay;
+            if(currentDisplay !== 'none') {
+                newDisplay = 'none';
+            } else {
+                newDisplay = 'block';
+            };
             toggleTarget.style.display = newDisplay;
         };
-        toggleBtn.addEventListener('click',handleMenuToggle);
+        toggleBtn.addEventListener('click',handleMenuToggle); */
+
         /* use toggle method */
-/*         toggleBtn.addEventListener('click', function(){
-            
+        toggleBtn.addEventListener('click', function(){
             toggleTarget.classList.toggle('on');
             toggleBtn.classList.toggle('on');
-        }); */
+        });
 
     /* 기능 순서도
         1. btn을 누른다
@@ -536,6 +565,45 @@
         4. 다시 btn을 클릭하면 이전으로 돌아온다
         5. 메뉴가 나타나고 사라질 때 transition으로 부드럽게처리
           */
+    </script>
+    <script type="text/javascript">
+        /* Collum4 TabMenu Script */
+        const tabList = document.querySelectorAll('.tabMenu .tabMenu__list>li');
+
+        for(let i = 0; i < tabList.length; i++){
+            tabList[i].querySelector('.tabMenu__btn').addEventListener('click', function(e){
+                e.preventDefault();
+                for(let j = 0; j < tabList.length; j++){
+                    tabList[j].classList.remove('active');
+                }
+                this.parentNode.classList.add('active');
+                /* console.log(this); this 찍어보면 a태그 tabMenu__btn나옴 */
+                /* 이 this = tabList[i].queryselector('.tabMeun__btn')임 */
+            });
+        }
+        /* 기능순서도
+            1. 각 공지사항의 default 값은 display:none
+            2. 공지사항 button은 a 태그임
+            3. a태그로  button을 찾기
+            4. 각 class명을 다르게 주기 혹은 for문 이용하기!
+
+            3개의 버튼이 있다...
+            버튼들에는 동일한 클래스가 적용되어 있다.
+                각각 클래스 따로 줘서하면 노가다지만 쉽게 할듯?
+            */
+
+        /* Collum5 Gallery - IMG slide Script */
+        /* 순서도
+            1. '.gallery__btn'
+            2. prev('gallery__btn--prev') & next('gallery__btn--next') btn
+            3. available autoplay('gallery__btn--play') & pause('gallery__btn--stop') slide
+            4. transform:tlanslatex 이용하여 img slide - carousel
+            5. nextBtn 누르면 -287px 누적
+            6. prevBtn 누르면 +287px 누적
+            7. 제일 처음[0] 혹은 제일 마지막[length-1?]에서는 이미지 처음으로 이동  */
+        const slideImg = document.querySelectorAll('.gallery__img>div'); /* img 찾기 */
+
+        const carouselSlide = document.querySelector('.gallery__img');
     </script>
 </body>
 </html>
